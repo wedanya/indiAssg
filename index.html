@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">Your opinion matters—take our quick survey!</p>
+    <form id="survey-form" action="/submit-form" method="post"
+    class="my-form">
+      <label id="name-label"for="name">Name</label><br>
+      <input type="text" id="name" placeholder="Enter your name" required><br><br>
+      <label id="email-label" for="email" type="email">Email</label><br>
+      <input type="email" id="email" placeholder="Enter your email" required><br><br>
+      <label id="studentId-label" for="studentId">Student ID</label><br>
+      <input type="tel" id="studentId"
+              pattern="\d{10}" maxlength="10"
+              placeholder="Enter your student ID"required><br><br>
+      <label id="number-label" for="age" >Age</label><br>
+      <input type="number" id="number"
+              min="18" max="110" placeholder="Enter numbers only" required><br><br>
+
+      <label for="course">Course Code</label><br>
+        <select id="dropdown" name="course">
+          <option value="" disabled selected>--Choose your course--</option>
+          <option value="cs110">CS110</option>
+          <option value="cs230">CS230</option>
+          <option value="cs264">CS264</option>
+          <option value="cs267">CS267</option>
+          <option value="cs270">CS270</option>
+        </select>
+        <br><br>
+      <fieldset>
+      <label for="residency">Residency</label>
+      <br><br>
+      <input type="radio" id="college" name="residency" value="college">
+      <label for="">College</label>
+      <br>
+      <input type="radio" id="non-residence" name="residency" value="non-residence">
+      <label for="">Non-Residence</label><br>
+      <br>
+      <label for="sMode">Study Mode</label>
+      <br><br>
+      <input type="radio" id="ft" name="sMode" value="ft">
+      <label for="">Full Time</label>
+      <br>
+      <input type="radio" id="pt" name="sMode" value="pt">
+      <label for="">Part Time</label><br>
+      <p>Transportation:</p>
+  <label>
+    <input type="checkbox" name="transport" value="car" />
+    Car
+  </label><br />
+  
+  <label>
+    <input type="checkbox" name="transport" value="bus" />
+    Bus
+  </label><br />
+  <label>
+    <input type="checkbox" name="transport" value="motor" />
+    Motorcycle
+  </label><br />
+       <p>Improvement Suggestion: </p>
+  <textarea name="comments" rows="5" cols="30" placeholder="Enter your comments here..."></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+
+</html>
