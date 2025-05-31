@@ -1,0 +1,117 @@
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+    background-color: #6e5643;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Georgia", serif;
+}
+
+#main {
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3); /* optional: soft background */
+  border-radius: 12px;
+}
+#title{
+    color: antiquewhite;
+    font-family: 'Teimer Light';
+}
+p{
+    text-align: justify;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px; /* optional: limits image width */
+  margin: auto;
+}
+
+.centered-image {
+  max-width: 300px;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.bio-text {
+  max-width: 500px;
+  text-align: justify, center;
+  font-family: "Georgia", serif;
+  margin: 0 auto;
+}
+
+.img-caption{
+    font-family: "Garamond", italic;
+    margin-top: 10px;
+  color: #e7d8cc; /* Light beige for dark brown background */
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: rgb(211, 208, 208);
+    margin-top: 5px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding-left: 30px;
+  border-left: 3px solid #a9745f; /* Lighter brown accent */
+}
+
+.timeline-item {
+  position: relative;
+  margin: 30px 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #a9745f; /* Soft brown */
+  border-radius: 50%;
+  border: 2px solid #2c1a0f;
+  box-shadow: 0 0 0 2px #a9745f;
+}
+
+.timeline-content {
+  background: #3e2b1f; /* Mid brown panel */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #e8c9a7; /* Soft warm beige */
+}
+
+.timeline-content p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #e7d8cc;
+}
+p[class="list"]{font-size: 1.3rem;}
+#tribute-link{
+    color: #e7d8cc;
+}
