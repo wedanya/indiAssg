@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url(https://i.postimg.cc/DyQ6yc4y/Beautiful-Piano.jpg);
+background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#header-img {
+  width: 60px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+h2{
+    margin-top: 5px;
+    color: #fff;
+}
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #f4a261;
+}
+
+section {
+  padding: 80px 20px 20px 20px;
+}
+
+.flex-container {
+ display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#email {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+#submit:hover {
+  background-color: #ff7b00;
+  border-color: #f7f7f7;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+.box {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background: #f9f871;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color:#000000;
+}
+p{
+    color:rgb(245, 255, 61);
+}
+h3{
+    color:#fff
+}
+.flex-container.pricing {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+.box2 {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background: #dededefd;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #333;
+}
+.pricing, h3{
+    color:#fca800;
+}
+.pricing, p{
+    color:#b87c4c;
+    font-weight: bold;
+}
+.pricing, li{
+    color: black;
+    font-weight: lighter;
+}
+.box2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(248, 242, 242, 0.2);
+  border-color: #fc9d59;
+}
+.end{
+    color: #a0a0a0;
+}
+
+
+@media (max-width: 600px) {
+  #nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #email {
+    width: 90%;
+  }
+}
