@@ -109,13 +109,14 @@ footer {
 .box {
   flex: 1 1 300px;
   max-width: 300px;
-  background: #f9f871;
+  background: #f7f7bc;
   padding: 20px;
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   color:#000000;
 }
 p{
-    color:rgb(245, 255, 61);
+    color:rgb(126, 130, 44);
 }
 h3{
     color:#fff
@@ -152,6 +153,7 @@ h3{
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(248, 242, 242, 0.2);
   border-color: #fc9d59;
+  border-width: 4px;
 }
 .end{
     color: #a0a0a0;
