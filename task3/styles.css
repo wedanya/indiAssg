@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+h3{
+    font-size: 250%;
+}
+
+#navbar {
+  background-color: #4465b7;
+  color: white;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #e9f2ff; /* or any color you like */
+  border-radius: 4px;
+  padding: 10px;
+  color: black; /* optional: rounded corners */
+}
+.nav-link.active {
+  background-color: #007bff;
+  padding-left: 25px;
+}
+#main-doc {
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+.main-section:target {
+    padding: 10px;
+  background-color: #c9e6ff;
+  border-radius: 4px;
+}
+code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: monospace;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+header{
+    font-weight: bold;
+}
+p{
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  .nav-link{
+    padding: 10px;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Font Awesome 5</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <header>Font Awesome 5 in HTML</header>
+    <a class="nav-link" href="#Font_Awesome_5">Font Awesome 5</a>
+    <a class="nav-link" href="#New_in_Font_Awesome_5">New in Font Awesome 5</a>
+    <a class="nav-link" href="#Sizing_the_Icons">Sizing the Icons</a>
+    <a class="nav-link" href="#List_the_Icons">List the Icons</a>
+    <a class="nav-link" href="#Animate_the_icons">Animate the icons</a>
+    <a class="nav-link" href="#Rotate_and_Flip">Rotate and Flip</a>
+    <a class="nav-link" href="#Stack_Icons">Stack Icons</a>
+    <a class="nav-link" href="#Fixed_Icons_Width">Fixed Icons Width</a>
+    <a class="nav-link" href="#Bordered_and_Pulled_Icons">Bordered and Pulled Icons</a>
+    <a class="nav-link" href="#Reference_to">Reference to</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-doc">
+    <h3>Icons</h3>
+    <p>Icons are added in HTML to enhance the visual appeal and usability of a website. They help communicate ideas quickly and clearly. Icons improve user experience by making navigation more intuitive, especially on mobile devices where space is limited. They also contribute to a cleaner, more modern design and help users identify key actions at a glance.</p>
+    
+    <section class="main-section" id="Font_Awesome_5">
+      <header>Font Awesome 5</header>
+      <p>A free library that lets you add icons to your website using simple HTML and CSS. It includes thousands of icons like arrows, social media logos, and user interface symbols. You can easily change their size, color, and style. To use it, just add a link to the Font Awesome CDN in your HTML, then use a tag like <i class="fas fa-home"></i> to show an icon.</p>
+      <ul>
+        <li>Sign up into Font Awesome</li>
+        <li>Save code (KIT CODE) to use on your website</li>
+        <li>Insert Font Awesome link in your HTML: </li>
+      </ul>
+      <code>&lt;script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"&gt;&lt;/script&gt;</code>
+    </section>
+
+    <section class="main-section" id="New_in_Font_Awesome_5">
+      <header>New in Font Awesome 5</header>
+      <p>New in Font Awesome 5 is the "fas" prefix, Font Awesome 4 uses "fa".</p>
+      <p>The 's' in &lt;fas&gt; stands for solid, and some icons also have a regular mode, specified by using the prefix far:</p>
+      <ul>
+        <li>For solid icons: <code>&lt;i class="fas fa-clock"&gt;&lt;/i&gt;</code></li>
+        <li>For normal icons: <code>&lt;i class="far fa-clock"&gt;&lt;/i&gt;</code></li>
+      </ul>
+      <p>Font Awesome is designed to be used with inline elements. The &lt;i&gt; and &lt;span&gt; elements are widely used for icons.</p>
+      <p>Also note that if you change the font-size or color of the icon's container, the icon changes. Same things goes for shadow, and anything else that gets inherited using CSS.</p>
+    </section>
+
+    <section class="main-section" id="Sizing_the_Icons">
+      <header>Sizing the Icons</header>
+      <p>The  "fa-xs",  "fa-sm",  "fa-lg",  "fa-2x",  "fa-3x",  "fa-4x",  "fa-5x",  "fa-6x",  "fa-7x",  "fa-8x",  "fa-9x", or  "fa-10x" classes are used to adjust the icon sizes relative to their container.</p>
+      <ul>
+        <li>Small: <code>&lt;i class="fas fa-clock fa-xs"&gt;&lt;/i&gt;</code> <code>&lt;i class="fas fa-clock fa-sm"&gt;&lt;/i&gt;</code></li>
+        <li>Medium: <code>&lt;i class="fas fa-clock fa-lg"&gt;&lt;/i&gt;</code> <code>&lt;i class="fas fa-clock fa-2x"&gt;&lt;/i&gt;</code></li>
+        <li>Large: <code>&lt;i class="fas fa-clock fa-5x"&gt;&lt;/i&gt;</code> <code>&lt;i class="fas fa-clock fa-10x"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="List_the_Icons">
+      <header>List the Icons</header>
+      <p>The "fa-ul" and "fa-li" classes are used to replace default bullets in unordered lists.</p>
+      <code>
+        &lt;ul class="fa-ul"&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;&lt;span class="fa-li"&gt;&lt;i class="fas fa-check-square"&gt;&lt;/i&gt;&lt;/span&gt;List Item&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;&lt;span class="fa-li"&gt;&lt;i class="fas fa-spinner fa-pulse"&gt;&lt;/i&gt;&lt;/span&gt;List Item&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;&lt;span class="fa-li"&gt;&lt;i class="fas fa-square"&gt;&lt;/i&gt;&lt;/span&gt;List Item&lt;/li&gt;<br>
+        &lt;/ul&gt;
+      </code>
+    </section>
+
+    <section class="main-section" id="Animate_the_icons">
+      <header>Animate the icons</header>
+      <p>The "fa-spin" class gets any icon to rotate, and the "fa-pulse" class gets any icon to rotate with 8 steps.</p>
+      <ul>
+        <li>Spin the icons: <code>&lt;i class="fas fa-spinner fa-spin"&gt;&lt;/i&gt;</code> <code>&lt;i class="fas fa-circle-notch fa-spin"&gt;&lt;/i&gt;</code></li>
+        <li>Pulsing the icons: <code>&lt;i class="fas fa-cog fa-pulse"&gt;&lt;/i&gt;</code></li>
+        <li>Spin and pulse the icons: <code>&lt;i class="fas fa-spinner fa-pulse"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Rotate_and_Flip">
+      <header>Rotate and Flip</header>
+      <p>The "fa-rotate" and "fa-flip" classes are used to rotate and flip icons.</p>
+      <ul>
+        <li>Normal position: <code>&lt;i class="fas fa-horse"&gt;&lt;/i&gt;</code></li>
+        <li>Rotate: <code>&lt;i class="fas fa-horse fa-rotate-90"&gt;&lt;/i&gt;</code> <code>&lt;i class="fas fa-horse fa-rotate-180"&gt;&lt;/i&gt;</code></li>
+        <li>Flip: <code>&lt;i class="fas fa-horse fa-flip-horizontal"&gt;&lt;/i&gt;</code> <code>&lt;i class="fas fa-horse fa-flip-vertical"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Stack_Icons">
+      <header>Stack Icons</header>
+      <p>To stack multiple icons, use the "fa-stack" class on the parent, the "fa-stack-1x" class for the regularly sized icon, and "fa-stack-2x" for the larger icon.</p>
+      <ul>
+        <li>
+          Inverse color:
+          <code>
+            &lt;span class="fa-stack fa-lg"&gt;<br>
+            &nbsp;&nbsp;&lt;i class="fas fa-circle fa-stack-2x"&gt;&lt;/i&gt;<br>
+            &nbsp;&nbsp;&lt;i class="fab fa-twitter fa-stack-1x fa-inverse"&gt;&lt;/i&gt;<br>
+            &lt;/span&gt;
+          </code>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Fixed_Icons_Width">
+      <header>Fixed Icons Width</header>
+      <p>The "fa-fw" class is used to set icons at a fixed width.</p>
+      <code>
+        &lt;div&gt;&lt;i class="fas fa-arrows-alt-v fa-fw"&gt;&lt;/i&gt; Icon 1&lt;/div&gt;<br>
+        &lt;div&gt;&lt;i class="fas fa-band-aid fa-fw"&gt;&lt;/i&gt; Icon 2&lt;/div&gt;<br>
+        &lt;div&gt;&lt;i class="fab fa-bluetooth-b fa-fw"&gt;&lt;/i&gt; Icon 3&lt;/div&gt;
+      </code>
+    </section>
+
+    <section class="main-section" id="Bordered_and_Pulled_Icons">
+      <header>Bordered and Pulled Icons</header>
+      <p>The "fa-border", "fa-pull-right", or "fa-pull-left" classes are used for pull quotes or article icons.</p>
+      <code>
+        &lt;i class="fas fa-quote-left fa-3x fa-pull-left fa-border"&gt;&lt;/i&gt;<br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+      </code>
+    </section>
+
+    <section class="main-section" id="Reference_to">
+      <header>Reference to</header>
+      <p>Visit the 
+        <a href="https://fontawesome.com" target="_blank">Font Awesome website</a>
+        for icons.
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
